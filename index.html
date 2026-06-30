@@ -5,61 +5,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Politique de confidentialité — Parenthèse</title>
   <style>
-    body { font-family: -apple-system, sans-serif; max-width: 680px; margin: 0 auto; padding: 40px 20px; color: #1a1a1a; line-height: 1.7; }
-    h1 { font-size: 28px; font-weight: 200; letter-spacing: 2px; margin-bottom: 8px; }
-    h2 { font-size: 16px; font-weight: 500; margin-top: 32px; }
-    p, li { font-size: 14px; color: #333; }
-    .logo { font-size: 36px; letter-spacing: 10px; color: #C9A96E; margin-bottom: 16px; }
-    .date { font-size: 12px; color: #888; margin-bottom: 40px; }
+    :root{
+      --cream:#F6F1E7; --paper:#FFFDF8; --ink:#1F1810; --body:#3a3127;
+      --sub:#6B5D47; --gold:#B08A4A; --gold-soft:#C9A96E; --line:rgba(176,138,74,0.20);
+    }
+    *{box-sizing:border-box;}
+    body{margin:0;background:var(--cream);color:var(--ink);
+      font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+      line-height:1.75;-webkit-font-smoothing:antialiased;}
+    .wrap{max-width:720px;margin:0 auto;padding:56px 22px 70px;}
+    .logo{text-align:center;font-size:40px;letter-spacing:14px;color:var(--gold);font-weight:300;padding-left:14px;}
+    h1{font-family:Georgia,'Times New Roman',serif;font-weight:600;font-size:32px;
+      text-align:center;letter-spacing:.5px;margin:16px 0 6px;}
+    .tag{text-align:center;color:var(--sub);font-size:13.5px;margin:0 auto 4px;max-width:520px;}
+    .date{text-align:center;color:var(--gold);font-size:11px;letter-spacing:1.5px;
+      text-transform:uppercase;margin-bottom:38px;}
+    .card{background:var(--paper);border:1px solid var(--line);border-radius:22px;
+      padding:34px 30px;box-shadow:0 8px 30px rgba(176,138,74,0.06);}
+    h2{font-family:Georgia,serif;font-size:18.5px;font-weight:600;margin:30px 0 8px;color:var(--ink);
+      display:flex;align-items:baseline;gap:10px;}
+    h2 .n{color:var(--gold-soft);font-size:14px;font-weight:700;}
+    .card h2:first-of-type{margin-top:0;}
+    p,li{font-size:15px;color:var(--body);}
+    ul{padding-left:20px;}
+    li{margin-bottom:6px;}
+    a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--line);}
+    a:hover{border-color:var(--gold);}
+    strong{color:var(--ink);}
+    .divider{height:1px;background:var(--line);margin:18px 0;}
+    .foot{text-align:center;color:var(--sub);font-size:12px;margin-top:36px;}
+    .foot .links{margin-bottom:10px;}
+    .foot a{margin:0 10px;border:none;}
   </style>
 </head>
 <body>
-  <div class="logo">( )</div>
-  <h1>Politique de confidentialité</h1>
-  <div class="date">Dernière mise à jour : juillet 2026</div>
+  <div class="wrap">
+    <div class="logo">( )</div>
+    <h1>Politique de confidentialité</h1>
+    <p class="tag">Parenthèse est une application de citations et de bien-être personnel. Nous limitons la collecte au strict nécessaire et protégeons vos données.</p>
+    <div class="date">Dernière mise à jour : juillet 2026</div>
 
-  <p>Parenthèse est une application mobile de citations et de bien-être personnel. Nous prenons la protection de vos données très au sérieux et limitons la collecte au strict nécessaire pour faire fonctionner et améliorer l'application.</p>
+    <div class="card">
+      <h2><span class="n">1</span> Données stockées localement</h2>
+      <p>La majorité de vos données restent <strong>uniquement sur votre appareil</strong> et ne sont transmises à personne :</p>
+      <ul>
+        <li>Votre prénom (optionnel, saisi volontairement)</li>
+        <li>Vos favoris et votre journal de réflexions</li>
+        <li>Vos préférences de thème, couleur et notifications</li>
+        <li>Votre progression dans les défis 30 jours</li>
+        <li>Votre historique de citations lues</li>
+      </ul>
 
-  <h2>1. Données stockées localement</h2>
-  <p>La majorité de vos données restent <strong>uniquement sur votre appareil</strong> et ne sont transmises à personne :</p>
-  <ul>
-    <li>Votre prénom (optionnel, saisi volontairement)</li>
-    <li>Vos favoris et votre journal de réflexions</li>
-    <li>Vos préférences de thème, couleur et notifications</li>
-    <li>Votre progression dans les défis 30 jours</li>
-    <li>Votre historique de citations lues</li>
-  </ul>
+      <div class="divider"></div>
+      <h2><span class="n">2</span> Mesure d'audience (analytics)</h2>
+      <p>Pour comprendre comment l'application est utilisée et l'améliorer, nous utilisons <strong>PostHog</strong> (hébergé dans l'Union européenne). Sont collectés : des événements d'utilisation (écrans consultés, actions effectuées), les réponses fournies pendant l'introduction — y compris le texte que vous saisissez volontairement dans le champ « objectifs » —, un identifiant d'installation anonyme, le type d'appareil et la version de l'application. Finalité : statistiques et amélioration du produit. Politique : <a href="https://posthog.com/privacy">posthog.com/privacy</a>.</p>
 
-  <h2>2. Mesure d'audience (analytics)</h2>
-  <p>Pour comprendre comment l'application est utilisée et l'améliorer, nous utilisons <strong>PostHog</strong> (hébergé dans l'Union européenne). Sont collectés : des événements d'utilisation (écrans consultés, actions effectuées), les réponses que vous fournissez pendant l'introduction — y compris le texte que vous saisissez volontairement dans le champ « objectifs » —, un identifiant d'installation anonyme, le type d'appareil et la version de l'application. Ces données servent uniquement à des fins statistiques et d'amélioration du produit. Politique de PostHog : <a href="https://posthog.com/privacy">posthog.com/privacy</a>.</p>
+      <div class="divider"></div>
+      <h2><span class="n">3</span> Publicité et mesure de campagnes</h2>
+      <p>Pour mesurer l'efficacité de nos publicités, nous utilisons le <strong>SDK TikTok for Business</strong>. <strong>Sur iOS, ce suivi n'a lieu que si vous y consentez</strong> via la demande « App Tracking Transparency ». Si vous l'acceptez, l'identifiant publicitaire (IDFA) et certains événements de conversion (par exemple le début d'un essai ou un abonnement) sont transmis à TikTok à des fins d'attribution. <strong>Si vous refusez, aucune donnée n'est partagée à des fins publicitaires via cet identifiant.</strong> Politique : <a href="https://www.tiktok.com/legal/privacy-policy">tiktok.com/legal/privacy-policy</a>.</p>
 
-  <h2>3. Publicité et mesure de campagnes</h2>
-  <p>Nous faisons la promotion de Parenthèse via des campagnes publicitaires. Pour en mesurer l'efficacité, nous utilisons le <strong>SDK TikTok for Business</strong>. <strong>Sur iOS, ce suivi n'a lieu que si vous y consentez</strong> via la demande « App Tracking Transparency » affichée par votre appareil. Si vous l'acceptez, l'identifiant publicitaire (IDFA) et certains événements de conversion (par exemple le début d'un essai ou un abonnement) sont transmis à TikTok pour attribuer et mesurer nos publicités. <strong>Si vous refusez, aucune donnée n'est partagée à des fins publicitaires via cet identifiant.</strong> Politique de TikTok : <a href="https://www.tiktok.com/legal/privacy-policy">tiktok.com/legal/privacy-policy</a>.</p>
+      <div class="divider"></div>
+      <h2><span class="n">4</span> Achats (Parenthèse Infinie)</h2>
+      <p>Les abonnements et achats sont gérés via l'App Store d'Apple et <strong>RevenueCat</strong>. Parenthèse ne stocke ni ne traite directement vos informations de paiement. RevenueCat traite des identifiants anonymisés pour gérer les abonnements — <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>.</p>
 
-  <h2>4. Achats (Parenthèse Infinie)</h2>
-  <p>Les abonnements et achats sont gérés via l'App Store d'Apple et <strong>RevenueCat</strong>. Parenthèse ne stocke ni ne traite directement vos informations de paiement. RevenueCat traite des identifiants anonymisés pour gérer les abonnements — politique sur <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>.</p>
+      <div class="divider"></div>
+      <h2><span class="n">5</span> Notifications &amp; Widget</h2>
+      <p>Les notifications sont planifiées localement par votre appareil (Expo Notifications) ; aucun serveur tiers n'en reçoit le contenu. Le widget lit la citation du jour depuis un stockage local partagé (App Group) entre l'app et l'extension, sans transmission extérieure.</p>
 
-  <h2>5. Notifications</h2>
-  <p>Si vous autorisez les notifications, elles sont planifiées localement par votre appareil via Expo Notifications. Aucun serveur tiers ne reçoit le contenu de vos notifications.</p>
+      <div class="divider"></div>
+      <h2><span class="n">6</span> Partage de données</h2>
+      <p>Nous ne <strong>vendons</strong> ni ne <strong>louons</strong> jamais vos données. Elles ne sont partagées qu'avec les prestataires décrits ci-dessus (PostHog, TikTok, RevenueCat, Apple), uniquement pour les finalités indiquées.</p>
 
-  <h2>6. Widget</h2>
-  <p>Le widget d'écran de verrouillage lit la citation du jour depuis un espace de stockage partagé local (App Group) entre l'application et l'extension widget. Aucune donnée n'est transmise à l'extérieur par le widget.</p>
+      <div class="divider"></div>
+      <h2><span class="n">7</span> Vos droits (RGPD)</h2>
+      <p>Vous disposez d'un droit d'accès, de rectification, d'effacement et d'opposition. Vous pouvez retirer votre consentement au suivi publicitaire à tout moment dans <em>Réglages &gt; Confidentialité &amp; Sécurité &gt; Suivi</em>, et effacer toutes vos données locales via « Réinitialiser l'app » dans les réglages ou en désinstallant l'application.</p>
 
-  <h2>7. Partage de données</h2>
-  <p>Nous ne <strong>vendons</strong> ni ne <strong>louons</strong> jamais vos données. Elles ne sont partagées qu'avec les prestataires décrits ci-dessus (PostHog, TikTok, RevenueCat, Apple), uniquement pour les finalités indiquées (fonctionnement, mesure d'audience, mesure publicitaire et gestion des abonnements).</p>
+      <div class="divider"></div>
+      <h2><span class="n">8</span> Conservation &amp; Enfants</h2>
+      <p>Les données locales sont conservées tant que l'app est installée ; les données de mesure suivent les politiques des prestataires, puis sont supprimées ou anonymisées. Parenthèse n'est pas destinée aux enfants de moins de 13 ans et ne collecte sciemment aucune donnée les concernant.</p>
 
-  <h2>8. Vos droits</h2>
-  <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement et d'opposition concernant vos données. Vous pouvez à tout moment retirer votre consentement au suivi publicitaire dans Réglages &gt; Confidentialité &amp; Sécurité &gt; Suivi sur votre iPhone. Vous pouvez aussi effacer l'ensemble de vos données locales via la fonction « Réinitialiser l'app » dans les réglages, ou en désinstallant l'application. Pour exercer vos droits, écrivez-nous à l'adresse ci-dessous.</p>
+      <div class="divider"></div>
+      <h2><span class="n">9</span> Contact</h2>
+      <p>Pour toute question ou pour exercer vos droits : <strong>parentheseapp@gmail.com</strong></p>
+    </div>
 
-  <h2>9. Conservation des données</h2>
-  <p>Les données locales sont conservées tant que l'application est installée. Les données de mesure d'audience et publicitaires sont conservées conformément aux politiques des prestataires concernés, puis supprimées ou anonymisées.</p>
-
-  <h2>10. Enfants</h2>
-  <p>Parenthèse n'est pas destinée aux enfants de moins de 13 ans et ne collecte sciemment aucune donnée les concernant.</p>
-
-  <h2>11. Contact</h2>
-  <p>Pour toute question relative à cette politique ou pour exercer vos droits, contactez-nous à : <strong>parentheseapp@gmail.com</strong></p>
-
-  <p style="margin-top: 48px; color: #888; font-size: 12px;">© 2026 Parenthèse. Tous droits réservés.</p>
+    <div class="foot">
+      <div class="links">
+        <a href="index.html">Politique de confidentialité</a>
+        <a href="cgv.html">Conditions d'utilisation et de vente</a>
+      </div>
+      © 2026 Parenthèse. Tous droits réservés.
+    </div>
+  </div>
 </body>
 </html>
